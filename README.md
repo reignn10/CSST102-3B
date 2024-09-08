@@ -129,3 +129,33 @@ Without the use of pre-built libraries like Scikit-learn, a basic linear regress
 2. Overfitting: On the test set, the model's error was somewhat greater, suggesting a potential overfit. Using regularization techniques or collecting more varied data could fix this.
 3. Manual Implementation: To ensure accurate calculations while implementing linear regression manually using the normal equation, careful handling of matrix operations was necessary, particularly when adding the intercept term.
 
+
+
+
+
+
+# Predicting House Prices with Multiple Regression
+
+[View the dataset and code here](https://colab.research.google.com/drive/1ygtO0Ijz314ImwuoSxgEDfEq9OIhIfJq?usp=sharing)
+
+## 1. Data Exploration and Visualization
+
+- **Histograms**: The distribution of features like house size, number of bedrooms, and house age varied widely.
+- **Correlation Matrix**: We observed strong correlations between house size and price, as well as weaker correlations between proximity to downtown and price.
+
+## 2. Data Preprocessing
+- **Missing Values**: No missing values were found in the dataset.
+- **Feature Scaling**: All numerical features were standardized using `StandardScaler` to ensure they were on a similar scale.
+
+## 3. Model Development
+We implemented a multiple linear regression model using Scikit-learn. The data was split into 70% training and 30% testing. After training the model on the standardized features, we used it to predict house prices in the test set.
+
+## 4. Model Evaluation
+- **Mean Squared Error (MSE)**: 100,214,724 (indicates the average squared difference between actual and predicted prices).
+- **R-squared**: 0.9986 (suggesting that the model explains about 99.86% of the variance in house prices).
+- **Adjusted R-squared**: 0.9986 (very close to R-squared, indicating minimal overfitting).
+
+The scatter plot of actual vs. predicted prices shows the model's high accuracy, with most points closely aligned along the ideal prediction line.
+
+## Conclusion
+The model is highly accurate and could be applied to real-world scenarios. However, potential limitations include assuming linear relationships between variables, which may not always hold true in complex real estate markets. Further improvements could involve exploring non-linear models or additional features.
