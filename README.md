@@ -5,7 +5,8 @@
 ## Objective
 The objective of this lab activity was to build a linear regression model from the ground up to forecast home values based on a few parameters, including age, square footage, number of bedrooms, and proximity to the city center. After processing the given dataset, a model was created, trained, and its effectiveness assessed.
 
-[View the dataset and code here]([https://github.com/yourusername/your-repo](https://colab.research.google.com/drive/1ygtO0Ijz314ImwuoSxgEDfEq9OIhIfJq?usp=sharing))
+[View the dataset and code here](https://colab.research.google.com/drive/1ygtO0Ijz314ImwuoSxgEDfEq9OIhIfJq?usp=sharing)
+
 
 ---
 
